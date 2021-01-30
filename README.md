@@ -20,6 +20,7 @@ To Run the application (is a tricky task) following prerequisites are required:
  5) Configuration: https://www.youtube.com/watch?v=WtOgoomDewo
  
  6) Execute Sql Queries using sqlite browser into a db file
+ 
     6.1 Locate the "Connection Database.JAVA" file in folder: JavaFx > controller > Connection Database.JAVA and add path to sqlite file.
  
  7) If SceneBuilder in not installed in Intellij IDEA by default install Scene Builder for Intellij to edit design
