@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pandaFX.Teacher_GradeController">
+    <AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #eceff4; -fx-background-radius: 12; -fx-border-radius: 10;">
+        <children>
+            <AnchorPane layoutX="1.0" prefHeight="720.0" prefWidth="320.0" style="-fx-background-color: #2e3440;">
+                <children>
+                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="74.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/Logo.jpg" />
+                        </image>
+                    </ImageView>
+                    <Label layoutX="28.0" layoutY="161.0" prefHeight="33.0" prefWidth="264.0" text="PandaFX Academic Portal" textFill="#d8dee9">
+                        <font>
+                            <Font name="Manjari Regular" size="22.0" />
+                        </font>
+                    </Label>
+                    <Button fx:id="homeButton" layoutX="-2.0" layoutY="241.0" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="45.0" prefWidth="314.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
+                        <font>
+                            <Font name="Manjari Regular" size="21.0" />
+                        </font></Button>
+                    <Button fx:id="attButton" layoutX="-2.0" layoutY="324.0" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="41.0" prefWidth="320.0" style="-fx-background-color: transparent;" text="Attendance" textFill="WHITE">
+                        <font>
+                            <Font name="Manjari Regular" size="19.0" />
+                        </font></Button>
+                    <Button fx:id="marksButton" layoutY="410.0" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="41.0" prefWidth="314.0" style="-fx-background-color: transparent;" text="Marks" textFill="WHITE">
+                        <font>
+                            <Font name="Manjari Regular" size="19.0" />
+                        </font></Button>
+                    <Button layoutY="570.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="314.0" style="-fx-background-color: transparent;" text="Settings" textFill="WHITE">
+                        <font>
+                            <Font name="Manjari Regular" size="19.0" />
+                        </font></Button>
+                    <Button fx:id="logoutButton" layoutX="1.0" layoutY="655.0" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="41.0" prefWidth="314.0" style="-fx-background-color: transparent;" text="Sign Out" textFill="WHITE">
+                        <font>
+                            <Font name="Manjari Regular" size="19.0" />
+                        </font></Button>
+                    <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="26.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/preferences-desktop-display.png" />
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="45.0" fitWidth="58.0" layoutX="28.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="26.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/kmenuedit.png" />
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="26.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/accessories-notes.png" />
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="24.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/preferences-system.png" />
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="27.0" layoutY="652.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/xyz.png" />
+                        </image>
+                    </ImageView>
+               <Button fx:id="gradeButton" layoutY="493.0" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="41.0" prefWidth="314.0" style="-fx-background-color: transparent;" text="Grade" textFill="WHITE">
+                  <font>
+                     <Font name="Manjari Regular" size="19.0" />
+                  </font>
+               </Button>
+               <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="23.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@img/accessories-dictionary.png" />
+                  </image>
+               </ImageView>
+                </children>
+            </AnchorPane>
+            <Label layoutX="364.0" layoutY="32.0" prefHeight="72.0" prefWidth="302.0" text="Evaluations" textAlignment="CENTER" textFill="#2e3440">
+                <font>
+                    <Font name="Manjari Regular" size="50.0" />
+                </font>
+                <effect>
+                    <DropShadow height="3.0" radius="1.0" width="3.0" />
+                </effect>
+            </Label>
+            <Separator layoutX="321.0" layoutY="96.0" prefHeight="16.0" prefWidth="957.0" />
+            <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="1235.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@img/searchmonkey.png" />
+                </image>
+            </ImageView>
+            <TextField layoutX="987.0" layoutY="55.0" prefHeight="33.0" prefWidth="240.0" style="-fx-background-radius: 10;" />
+            <Label layoutX="650.0" layoutY="698.0" text="All Rights Reserved Copyright © 2000-2020" />
+            <Label layoutX="687.0" layoutY="678.0" text="Designed by Asjad PandaFX" />
+            <Separator layoutX="322.0" layoutY="671.0" prefHeight="9.0" prefWidth="957.0" />
+            <AnchorPane layoutX="362.0" layoutY="112.0" prefHeight="51.0" prefWidth="860.0" style="-fx-background-color: #5e81ac;">
+                <effect>
+                    <DropShadow height="5.0" radius="2.0" width="5.0" />
+                </effect>
+                <children>
+                    <Label layoutX="51.0" layoutY="9.0" text="Selection" textFill="#eceff4">
+                        <font>
+                            <Font name="Manjari Regular" size="26.0" />
+                        </font>
+                        <effect>
+                            <DropShadow />
+                        </effect>
+                    </Label>
+                    <ImageView fitHeight="33.0" fitWidth="58.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/com.github.fabiocolacio.marker.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </AnchorPane>
+            <AnchorPane layoutX="362.0" layoutY="162.0" prefHeight="119.0" prefWidth="860.0" style="-fx-background-color: #d8dee9;">
+                <children>
+                    <ChoiceBox fx:id="selectCourse" layoutX="211.0" layoutY="75.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-border-color: #2e3440; -fx-border-radius: 10;">
+
+                    </ChoiceBox>
+                    <Label layoutX="211.0" layoutY="45.0" text="Select Course" textFill="#4c566a">
+                        <font>
+                            <Font name="Manjari Regular" size="20.0" />
+                        </font>
+                        <effect>
+                            <DropShadow height="3.0" radius="1.0" width="3.0" />
+                        </effect>
+                    </Label>
+                    <Label layoutX="400.0" layoutY="47.0" text="Select Section" textFill="#4c566a">
+                        <font>
+                            <Font name="Manjari Regular" size="20.0" />
+                        </font>
+                        <effect>
+                            <DropShadow height="3.0" radius="1.0" width="3.0" />
+                        </effect>
+                    </Label>
+                    <ChoiceBox fx:id="selectSection" layoutX="399.0" layoutY="76.0" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: #2e3440; -fx-border-radius: 10;" />
+                    <Label layoutX="556.0" layoutY="14.0" text="Date" textFill="#4c566a">
+                        <font>
+                            <Font name="Manjari Regular" size="20.0" />
+                        </font>
+                        <effect>
+                            <DropShadow height="3.0" radius="1.0" width="3.0" />
+                        </effect>
+                    </Label>
+                    <Label fx:id="currDate" layoutX="618.0" layoutY="15.0" prefHeight="33.0" prefWidth="209.0" style="-fx-background-color: transparent; -fx-border-color: #2e3440; -fx-border-radius: 10;" text=" " textAlignment="CENTER">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                    <Button fx:id="showButton" layoutX="617.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#onSectionSelect" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #8fbcbb; -fx-background-radius: 19;" text="Show">
+                        <font>
+                            <Font name="Manjari Regular" size="18.0" />
+                        </font>
+                        <effect>
+                            <DropShadow height="5.0" radius="2.0" width="5.0" />
+                        </effect>
+                    </Button>
+                    <ChoiceBox fx:id="selectSemester" layoutX="13.0" layoutY="72.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-border-color: #2e3440; -fx-border-radius: 10;" />
+                    <Label layoutX="13.0" layoutY="42.0" text="Select Semester" textFill="#4c566a">
+                        <font>
+                            <Font name="Manjari Regular" size="20.0" />
+                        </font>
+                        <effect>
+                            <DropShadow height="3.0" radius="1.0" width="3.0" />
+                        </effect>
+                    </Label>
+                </children>
+                <effect>
+                    <DropShadow height="10.0" radius="4.5" width="10.0" />
+                </effect>
+            </AnchorPane>
+            <AnchorPane fx:id="ancPane" layoutX="362.0" layoutY="289.0" opacity="0.0" prefHeight="366.0" prefWidth="860.0" style="-fx-background-color: #d8dee9;">
+                <effect>
+                    <DropShadow height="5.0" radius="2.0" width="5.0" />
+                </effect>
+                <children>
+                    <ListView fx:id="stdList" layoutX="31.0" layoutY="12.0" prefHeight="347.0" prefWidth="346.0" style="-fx-background-color: #d8dee9; -fx-border-radius: 5; -fx-border-color: #2e3440;" />
+                    <Button fx:id="markSheetButton" layoutX="407.0" layoutY="161.0" mnemonicParsing="false" onAction="#onEvaluation" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: #8fbcbb; -fx-background-radius: 19;" text="Show Mark Sheet">
+                        <effect>
+                            <DropShadow height="5.0" radius="2.0" width="5.0" />
+                        </effect>
+                        <font>
+                            <Font name="Manjari Regular" size="18.0" />
+                        </font>
+                    </Button>
+                    <Label layoutX="416.0" layoutY="266.0" prefHeight="34.0" prefWidth="118.0" text="Grade" textAlignment="CENTER">
+                        <font>
+                            <Font name="Manjari Regular" size="23.0" />
+                        </font>
+                        <effect>
+                            <DropShadow height="4.0" radius="1.5" width="4.0" />
+                        </effect>
+                    </Label>
+                    <ChoiceBox fx:id="gradeList" layoutX="494.0" layoutY="268.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: transparent; -fx-border-color: #2e3440; -fx-border-radius: 10;">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="A+" />
+                                <String fx:value="A" />
+                                <String fx:value="A-" />
+                                <String fx:value="B+" />
+                                <String fx:value="B" />
+                                <String fx:value="B-" />
+                                <String fx:value="C+" />
+                                <String fx:value="C" />
+                                <String fx:value="C-" />
+                                <String fx:value="D" />
+                                <String fx:value="F" />
+                            </FXCollections>
+                        </items>
+                    </ChoiceBox>
+                    <Button fx:id="grade" layoutX="414.0" layoutY="311.0" mnemonicParsing="false" onAction="#onEvaluation" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: #bf616a; -fx-background-radius: 19;" text="Add Grade" textFill="WHITE">
+                        <effect>
+                            <DropShadow height="5.0" radius="2.0" width="5.0" />
+                        </effect>
+                        <font>
+                            <Font name="Manjari Regular" size="18.0" />
+                        </font>
+                    </Button>
+                    <Label fx:id="Message" layoutX="409.0" layoutY="223.0" prefHeight="34.0" prefWidth="314.0">
+                        <font>
+                            <Font name="Manjari Bold" size="18.0" />
+                        </font>
+                        <effect>
+                            <DropShadow height="3.0" radius="1.0" width="3.0" />
+                        </effect>
+                    </Label>
+               <ListView fx:id="markSheet" layoutX="398.0" layoutY="14.0" prefHeight="127.0" prefWidth="433.0" style="-fx-background-color: #d8dee9; -fx-border-radius: 5; -fx-border-color: #2e3440;" />
+                </children>
+            </AnchorPane>
+        </children></AnchorPane>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

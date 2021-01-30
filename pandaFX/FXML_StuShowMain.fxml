@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pandaFX.Stu_ControllerMain">
+
+
+    <children>
+        <VBox layoutY="82.0" prefHeight="639.0" prefWidth="124.0" style="-fx-background-color: #3B4252;">
+            <children>
+                <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Go_Main" prefHeight="92.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" styleClass="raise" text="Home" textAlignment="JUSTIFY" textFill="#e5eae3">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/preferences-desktop-display.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Go_CR" prefHeight="101.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" text="Course&#10;Register" textFill="#f5efef">
+                    <font>
+                        <Font name="Impact" size="11.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" x="-10.0">
+                            <image>
+                                <Image url="@img/images/font-viewer.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Go_Marks" prefHeight="103.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" stylesheets="file:/C:/Users/HP/IdeaProjects/untitled/src/pandaFX/css/button.css" text="Marks" textAlignment="JUSTIFY" textFill="#e5eae3">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/YACReaderLibrary.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="88.0" mnemonicParsing="false" onAction="#Go_Attendence" prefHeight="119.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" text="Atten&#10;dence" textFill="#f5efef">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" x="-10.0">
+                            <image>
+                                <Image url="@img/images/accessories-notes.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="256.0" mnemonicParsing="false" onAction="#Go_Transcript" prefHeight="124.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" stylesheets="file:/C:/Users/HP/IdeaProjects/untitled/src/pandaFX/css/button.css" text="Transcript" textAlignment="JUSTIFY" textFill="#e5eae3">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/diodon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onAction="#Go_WD" prefHeight="101.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" text="WithDraw&#10;Course" textFill="#f5efef">
+               <font>
+                  <Font name="Impact" size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" x="-10.0">
+                     <image>
+                        <Image url="@img/images/JavaFXSceneBuilder2.0.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children></VBox>
+        <AnchorPane prefHeight="90.0" prefWidth="1280.0" style="-fx-background-color: #5E81AC;">
+            <children>
+                <AnchorPane layoutX="19.0" prefHeight="90.0" prefWidth="103.0">
+                    <children>
+                        <ImageView fitHeight="108.0" fitWidth="92.0" layoutX="6.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/logo (2).png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="128.0" fitWidth="84.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/logo (2).png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <TextField layoutX="1034.0" layoutY="29.0" prefHeight="51.0" prefWidth="84.0" style="-fx-background-color: #5E81AC;" text="Hello Mr ,">
+                    <font>
+                        <Font name="Impact" size="17.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </TextField>
+                <TextField fx:id="Name" layoutX="1112.0" layoutY="29.0" prefHeight="51.0" prefWidth="138.0" style="-fx-background-color: #5E81AC;" text="Muhammad Zain">
+                    <font>
+                        <Font name="Impact" size="17.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <Label layoutX="144.0" layoutY="104.0" prefHeight="24.0" prefWidth="124.0" text="Student | Profile">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Label>
+        <AnchorPane layoutX="155.0" layoutY="151.0" prefHeight="42.0" prefWidth="1085.0" style="-fx-background-color: #88C0D0;">
+            <children>
+                <ImageView fitHeight="24.0" fitWidth="44.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/images/applications-office.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="45.0" layoutY="7.0" prefHeight="32.0" prefWidth="138.0" text="University Information" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="15.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="155.0" layoutY="193.0" prefHeight="90.0" prefWidth="1086.0" style="-fx-background-color: #E5E9F0;">
+            <children>
+                <Label layoutX="28.0" layoutY="14.0" text="Roll No:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+                <Label layoutX="28.0" layoutY="59.0" text="Section:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+                <Label layoutX="442.0" layoutY="14.0" text="Degree:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+                <Label layoutX="442.0" layoutY="59.0" text="Campus:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+                <Label layoutX="821.0" layoutY="14.0" text="Batch:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+                <Label layoutX="821.0" layoutY="59.0" text="Status:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+                <TextField fx:id="Roll_No" layoutX="75.0" layoutY="10.0" style="-fx-background-color: #E5E9F0;">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></TextField>
+                <TextField fx:id="Section" layoutX="75.0" layoutY="55.0" style="-fx-background-color: #E5E9F0;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+                <TextField fx:id="Degree" layoutX="497.0" layoutY="9.0" style="-fx-background-color: #E5E9F0;">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></TextField>
+                <TextField fx:id="Campus" layoutX="495.0" layoutY="55.0" style="-fx-background-color: #E5E9F0;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+                <TextField fx:id="Batch" layoutX="873.0" layoutY="11.0" style="-fx-background-color: #E5E9F0;">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></TextField>
+                <TextField fx:id="Status" layoutX="873.0" layoutY="55.0" style="-fx-background-color: #E5E9F0;">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></TextField>
+            </children></AnchorPane>
+        <AnchorPane layoutX="155.0" layoutY="332.0" prefHeight="42.0" prefWidth="1085.0" style="-fx-background-color: #88C0D0;">
+            <children>
+                <ImageView fitHeight="24.0" fitWidth="44.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/images/applications-office.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="45.0" layoutY="7.0" prefHeight="32.0" prefWidth="138.0" text="Personal Information" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="15.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="155.0" layoutY="539.0" prefHeight="42.0" prefWidth="1085.0" style="-fx-background-color: #88C0D0;">
+            <children>
+                <ImageView fitHeight="24.0" fitWidth="44.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/images/applications-office.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="45.0" layoutY="7.0" prefHeight="32.0" prefWidth="138.0" text="Notifications" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="15.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+            <Button fx:id="Cls_Msg" layoutX="961.0" layoutY="8.0" mnemonicParsing="false" onAction="#Cls_Msgs" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #8fbcbb;" text="Clear Messages">
+               <font>
+                  <Font name="Segoe MDL2 Assets" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="154.0" layoutY="374.0" prefHeight="90.0" prefWidth="1086.0" style="-fx-background-color: #E5E9F0;">
+            <children>
+                <Label layoutX="28.0" layoutY="59.0" text="Gender:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+                <Label layoutX="442.0" layoutY="14.0" text="DOB:">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+                <Label layoutX="32.0" layoutY="14.0" text="EMAIL:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+                <Label layoutX="818.0" layoutY="14.0" text="Contact:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+                <TextField fx:id="Gender" layoutX="75.0" layoutY="55.0" style="-fx-background-color: #E5E9F0;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+                <TextField fx:id="DOB" layoutX="495.0" layoutY="10.0" style="-fx-background-color: #E5E9F0;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+                <TextField layoutX="892.0" layoutY="10.0" opacity="0.0" />
+                <TextField fx:id="Contact" layoutX="892.0" layoutY="10.0" style="-fx-background-color: #E5E9F0;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="Email" layoutX="75.0" layoutY="10.0" style="-fx-background-color: #E5E9F0;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+                <Label layoutX="407.0" layoutY="60.0" text="Home Phone:">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+                <TextField fx:id="HomePhone" layoutX="495.0" layoutY="54.0" style="-fx-background-color: #E5E9F0;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+            </children>
+        </AnchorPane>
+      <TableView fx:id="Message_View" layoutX="155.0" layoutY="581.0" prefHeight="135.0" prefWidth="1086.0">
+        <columns>
+          <TableColumn fx:id="Messages" prefWidth="1085.5999969482423" text="Messages" />
+        </columns>
+      </TableView>
+      <Button fx:id="logoutButton" layoutX="1139.0" layoutY="98.0" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="32.0" prefWidth="103.0" text="Logout">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+    </children>
+</AnchorPane>

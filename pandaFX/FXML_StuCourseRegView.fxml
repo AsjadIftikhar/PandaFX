@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pandaFX.Stu_ControllerCourseReg">
+
+    <children>
+        <VBox layoutY="82.0" prefHeight="639.0" prefWidth="124.0" style="-fx-background-color: #3B4252;">
+            <children>
+                <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Go_Main" prefHeight="92.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" styleClass="raise" text="Home" textAlignment="JUSTIFY" textFill="#e5eae3">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/preferences-desktop-display.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#Go_CR" prefHeight="101.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" text="Course&#10;Register" textFill="#f5efef">
+                    <font>
+                        <Font name="Impact" size="11.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" x="-10.0">
+                     <image>
+                        <Image url="@img/images/font-viewer.png" />
+                     </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Go_Marks" prefHeight="103.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" stylesheets="file:/C:/Users/HP/IdeaProjects/untitled/src/pandaFX/css/button.css" text="Marks" textAlignment="JUSTIFY" textFill="#e5eae3">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/YACReaderLibrary.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="88.0" mnemonicParsing="false" onAction="#Go_Attendence" prefHeight="119.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" text="Atten&#10;dence" textFill="#f5efef">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" x="-10.0">
+                            <image>
+                                <Image url="@img/images/accessories-notes.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="256.0" mnemonicParsing="false" onAction="#Go_Transcript" prefHeight="124.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" stylesheets="file:/C:/Users/HP/IdeaProjects/untitled/src/pandaFX/css/button.css" text="Tran&#10;script" textAlignment="JUSTIFY" textFill="#e5eae3">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/diodon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onAction="#Go_WD" prefHeight="101.0" prefWidth="124.0" style="-fx-background-color: #3B4252;" text="WithDraw&#10;Course" textFill="#f5efef">
+                    <font>
+                        <Font name="Impact" size="11.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" x="-10.0">
+                            <image>
+                                <Image url="@img/images/JavaFXSceneBuilder2.0.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children></VBox>
+        <AnchorPane prefHeight="90.0" prefWidth="1280.0" style="-fx-background-color: #5E81AC;">
+            <children>
+                <AnchorPane layoutX="19.0" prefHeight="90.0" prefWidth="103.0">
+                    <children>
+                        <ImageView fitHeight="108.0" fitWidth="92.0" layoutX="6.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/logo (2).png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="128.0" fitWidth="84.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/images/logo (2).png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <Label layoutX="144.0" layoutY="104.0" prefHeight="24.0" prefWidth="166.0" text="Student | Registeration">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Label>
+        <AnchorPane layoutX="144.0" layoutY="237.0" prefHeight="51.0" prefWidth="1098.0" style="-fx-background-color: #88C0D0;">
+            <children>
+                <ImageView fitHeight="24.0" fitWidth="44.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/images/applications-office.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="45.0" layoutY="7.0" prefHeight="32.0" prefWidth="138.0" text="Course Registeration" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="15.0" />
+                    </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Label>
+            <Label fx:id="Reg_Per" layoutX="217.0" layoutY="7.0" prefHeight="32.0" prefWidth="562.0" text=".">
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+            <Label fx:id="Message_Label" layoutX="705.0" layoutY="10.0" prefHeight="32.0" prefWidth="270.0" text=".">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Button fx:id="Subscribe" disable="true" layoutX="983.0" layoutY="7.0" mnemonicParsing="false" onAction="#Subscribe_WList" prefHeight="32.0" prefWidth="84.0" style="-fx-background-color: #8fbcbb;" styleClass="-fx-background-radius" text="Subscribe" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="541.0" layoutY="182.0" prefHeight="42.0" prefWidth="130.0" style="-fx-background-color: #88C0D0;">
+            <children>
+                <ComboBox fx:id="Semester_Id" layoutY="-1.0" onAction="#comboAction" prefHeight="42.0" prefWidth="130.0" style="-fx-background-color: #88C0D0;" />
+            </children></AnchorPane>
+        <TableView fx:id="Cr_view" layoutX="144.0" layoutY="288.0" prefHeight="200.0" prefWidth="1098.0">
+            <columns>
+                <TableColumn fx:id="CourseCode" prefWidth="166.40000915527344" text="CrsCode" />
+                <TableColumn fx:id="CourseName" prefWidth="273.5999755859375" text="CourseName" />
+                <TableColumn fx:id="CrdHrs" prefWidth="99.60003662109375" text="CrdHrs" />
+            <TableColumn fx:id="Status" prefWidth="154.79998779296875" text="Status" />
+            <TableColumn fx:id="Section" minWidth="0.0" prefWidth="164.79998779296875" text="Section" />
+            <TableColumn fx:id="Register" minWidth="0.0" prefWidth="121.79998779296875" text="Register" />
+            <TableColumn fx:id="Drop" minWidth="0.0" prefWidth="117.5999755859375" text="Drop" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
